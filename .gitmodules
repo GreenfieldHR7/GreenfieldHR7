@@ -1,3 +1,9 @@
 [submodule "client/dist/client/dist/css-star-rating"]
 	path = client/dist/client/dist/css-star-rating
 	url = https://github.com/BioPhoton/css-star-rating.git
+[submodule "client/css-star-rating"]
+	path = client/css-star-rating
+	url = https://github.com/BioPhoton/css-star-rating.git
+[submodule "client/dist/css-star-rating"]
+	path = client/dist/css-star-rating
+	url = https://github.com/BioPhoton/css-star-rating.git

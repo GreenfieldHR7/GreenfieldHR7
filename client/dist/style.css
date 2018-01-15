@@ -106,16 +106,6 @@ input {
   float: top;
 }
 
-.restaurant-box {
-  float: left;
-  max-width: 99%;
-  display: block;
-  border: 5px;
-  padding: 15px;
-  margin: 15px;
-  background-color: grey;
-}
-
 .restaurant-map {
   float: left;
   max-width: 50%;
@@ -191,15 +181,6 @@ input {
   margin: 15px;
 }
 
-.restaurant-box {
-  float: left;
-  max-width: 99%;
-  display: block;
-  border: 5px;
-  padding: 15px;
-  margin: 15px;
-  background-color: grey;
-}
 .restaurant-map {
   float: left;
   max-width: 50%;
@@ -239,15 +220,6 @@ input {
   border: 2px solid black;
 }
 
-.restaurant-box {
-  float: left;
-  max-width: 99%;
-  display: block;
-  border: 5px;
-  padding: 15px;
-  margin: 15px;
-  background-color: grey;
-}
 .restaurant-map {
   float: left;
   max-width: 50%;

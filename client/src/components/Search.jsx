@@ -17,7 +17,6 @@ class Search extends React.Component {
 			restaurants: [],
 			reviews: [],
 			restaurantDetailView: false,
-			user: {id: 1},
 			restaurantDetailView: false,
 			filter: ''
 		};

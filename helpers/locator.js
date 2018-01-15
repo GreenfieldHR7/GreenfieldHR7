@@ -1,9 +1,6 @@
 const path = require('path');
 const db = require('../database/index.js');
 
-//Worst time: 450ms
-//Best time: 152ms
-
 var getCloseRestaurants = (userLat, userLon, userId, callback) => {
 	db.getAllRestaurants((err, restaurants) => {
 		var allResults = {};
@@ -32,7 +29,6 @@ var getCloseRestaurants = (userLat, userLon, userId, callback) => {
 
 		if (userId) {
 			getFavoriteCategories(userId, (favorites) => {
-				console.log(favorites);
 				var closestResultsWithFavorites = [];
 
 				closestResults.forEach(restaurant => {

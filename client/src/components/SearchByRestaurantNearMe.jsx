@@ -45,6 +45,3 @@ class SearchByRestaurantNearMe extends React.Component {
 
 
 export default SearchByRestaurantNearMe;
-
-//add class to div
-	//float left
