@@ -112,12 +112,17 @@ let getBookmarkedRestaurants = (userId, callback) => {
 }
 
 let bookmarkRestaurant = (userId, restaurantId, callback) => {
-	const queryStr = 'insert into bookmarks (user_id, restaurant_id) values ($1, $2)';
-	client.query(queryStr, [userId, restaurantId], (err, result) => {
-		if (err) {
-			callback(err, null);
-		} else {
-			callback(null, result);
+	const checkQuery = 'select * from bookmarks where user_id = $1 and restaurant_id = $2';
+	client.query(checkQuery, [userId, restaurantId], (err, resultOne)=>{
+		if (resultOne.rows.length === 0) {
+			const queryStr = 'insert into bookmarks (user_id, restaurant_id) values ($1, $2)';
+			client.query(queryStr, [userId, restaurantId], (err, resultTwo) => {
+				if (err) {
+					callback(err, null);
+				} else {
+					callback(null, resultTwo);
+				}
+			})
 		}
 	})
 }
