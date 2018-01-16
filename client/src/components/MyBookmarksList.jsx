@@ -7,9 +7,8 @@ class MyBookmarksList extends React.Component {
     constructor(props) {
   		super(props);
 
-  		//change user to this.props.user after Jimmy finishes his work
   		this.state = {
-  			user: {id: 1},
+  			user: this.props.user,
   			restaurants: []
   		}
 
